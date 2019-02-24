@@ -2,6 +2,9 @@
 
 int main()
 {
-	cout << "Hello, world" << endl;
+	cout << "Please say your name: " << endl;
+	string yourname;
+	cin >> yourname;
+	cout << "Hello, " << yourname << endl;
 	return 0;
 }
