@@ -1,3 +1,3 @@
 cmake_minimum_required (VERSION 2.6)
-project (Hello)
-add_executable(Hello hello.cpp)
+project (hello)
+add_executable(hello hello.cpp)
