@@ -5,6 +5,9 @@ int main()
 	cout << "Please say your name: " << endl;
 	string yourname;
 	cin >> yourname;
-	cout << "Hello, " << yourname << endl;
+	if (cin)
+		cout << "Hello, " << yourname << endl;
+	else
+		cerr << "Error" << endl;
 	return 0;
 }
