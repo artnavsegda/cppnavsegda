@@ -1,7 +1,5 @@
 #include "std_lib_facilities.h"
 
-class Bad_number { };
-
 int main()
 {
 	cout << "Please say number: " << endl;
@@ -9,13 +7,14 @@ int main()
 	try {
 		int yournumber;
 		cin >> yournumber;
-		if (yournumber <= 0) throw Bad_number();
+		if (!cin) throw runtime_error("Incorrect number");
 		cout << "Number is " << yournumber << endl;
+		return 0;
 	}
-	catch (Bad_number)
+	catch (runtime_error& e)
 	{
-		cout << "Incorrect number" << endl;
+		cout << "Runtime error: " << e.what() << endl;
+		return 1;
 	}
 
-	return 0;
 }
