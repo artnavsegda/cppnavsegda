@@ -11,9 +11,9 @@ int main()
 		cout << "Number is " << yournumber << endl;
 		return 0;
 	}
-	catch (runtime_error& e)
+	catch (exception& e)
 	{
-		cout << "Runtime error: " << e.what() << endl;
+		cout << "error: " << e.what() << endl;
 		return 1;
 	}
 
