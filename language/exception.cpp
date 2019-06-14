@@ -2,21 +2,31 @@
 
 using namespace std;
 
+void myfunc2(int number)
+{
+	if (number == 34)
+	{
+		throw "Number is thirty four";
+	}
+	cout << number;
+	cout << '\n';
+}
+
+
+void myfunc(int number)
+{
+	try
+	{
+		myfunc2(number);
+	}
+	catch (char * msg)
+	{
+		cout << msg;
+	}
+}
+
 int main()
 {
-	cout << "Please say number: " << endl;
-
-	try {
-		int yournumber;
-		cin >> yournumber;
-		if (!cin) throw runtime_error("Incorrect number");
-		cout << "Number is " << yournumber << endl;
-		return 0;
-	}
-	catch (exception& e)
-	{
-		cout << "error: " << e.what() << endl;
-		return 1;
-	}
-
+	myfunc(22);
+	myfunc(34);
 }
