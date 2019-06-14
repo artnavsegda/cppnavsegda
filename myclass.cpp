@@ -7,6 +7,7 @@ struct myclass
 	~myclass();
 	int i;
 	void printi();
+	void operator !();
 };
 
 myclass::myclass()
@@ -19,6 +20,11 @@ myclass::~myclass()
 	cout << "Class destroyed\n";
 }
 
+void myclass::operator !()
+{
+	cout << "Double cross\n";
+}
+
 void myclass::printi()
 {
 	cout << i << endl;
@@ -29,5 +35,6 @@ int main()
 	myclass myobj;
 	myobj.i = 10;
 	myobj.printi();
+	!myobj;
 }
 
