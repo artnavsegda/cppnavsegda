@@ -4,11 +4,13 @@ using namespace std;
 struct myclass
 {
 	int i;
-	void printi()
-	{
-		cout << i << endl;
-	}
+	void printi();
 };
+
+void myclass::printi()
+{
+	cout << i << endl;
+}
 
 int main()
 {
