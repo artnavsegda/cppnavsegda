@@ -3,9 +3,15 @@ using namespace std;
 
 struct myclass
 {
+	myclass();
 	int i;
 	void printi();
 };
+
+myclass::myclass()
+{
+	cout << "Class created\n";
+}
 
 void myclass::printi()
 {
