@@ -4,6 +4,7 @@ using namespace std;
 struct myclass
 {
 	myclass();
+	myclass(const myclass &obj);
 	~myclass();
 	int i;
 	void printi();
@@ -13,6 +14,11 @@ struct myclass
 myclass::myclass()
 {
 	cout << "Class created\n";
+}
+
+myclass::myclass(const myclass &obj)
+{
+	cout << "Class copied\n";
 }
 
 myclass::~myclass()
@@ -36,5 +42,6 @@ int main()
 	myobj.i = 10;
 	myobj.printi();
 	!myobj;
+	myclass myobj2 = myobj;
 }
 
