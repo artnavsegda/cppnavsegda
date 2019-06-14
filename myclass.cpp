@@ -4,6 +4,7 @@ using namespace std;
 struct myclass
 {
 	myclass();
+	~myclass();
 	int i;
 	void printi();
 };
@@ -11,6 +12,11 @@ struct myclass
 myclass::myclass()
 {
 	cout << "Class created\n";
+}
+
+myclass::~myclass()
+{
+	cout << "Class destroyed\n";
 }
 
 void myclass::printi()
