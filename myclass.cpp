@@ -11,6 +11,11 @@ struct myclass
 	void operator !();
 };
 
+struct otherclass : myclass
+{
+	int x;
+};
+
 myclass::myclass()
 {
 	cout << "Class created\n";
@@ -43,5 +48,8 @@ int main()
 	myobj.printi();
 	!myobj;
 	myclass myobj2 = myobj;
+	otherclass myobj3;
+	myobj3.i = 11;
+	myobj3.printi();
 }
 
