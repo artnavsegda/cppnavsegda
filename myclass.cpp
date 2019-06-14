@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class myclass
+struct myclass
 {
-	public:
-		int i;
-		void printi()
-		{
-			cout << i << endl;
-		}
+	int i;
+	void printi()
+	{
+		cout << i << endl;
+	}
 };
 
 int main()
