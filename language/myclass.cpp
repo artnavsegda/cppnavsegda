@@ -4,7 +4,8 @@ using namespace std;
 struct myclass
 {
 	myclass();
-	myclass(const myclass &obj);
+	myclass(myclass &obj);
+	myclass(myclass &&obj);
 	~myclass();
 	int i;
 	void printi();
@@ -21,9 +22,14 @@ myclass::myclass()
 	cout << "Class created\n";
 }
 
-myclass::myclass(const myclass &obj)
+myclass::myclass(myclass &obj)
 {
 	cout << "Class copied\n";
+}
+
+myclass::myclass(myclass &&obj)
+{
+	cout << "Class moved\n";
 }
 
 myclass::~myclass()
