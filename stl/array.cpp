@@ -10,5 +10,7 @@ int main()
 	cout << myarray[1];
 	cout << myarray[2];
 	cout << "\n";
+	cout << myarray.size();
+	cout << "\n";
 }
 
