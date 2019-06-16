@@ -11,7 +11,7 @@ void printnum(T number)
 
 int main()
 {
-	printnum(1);
-	printnum(1.1);
+	printnum<int>(1);
+	printnum<float>(1.0);
 }
 
