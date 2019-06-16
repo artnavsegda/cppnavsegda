@@ -10,7 +10,9 @@ int main()
 	cout << myarray[1];
 	cout << myarray[2];
 	cout << "\n";
+	for (auto &i: array)
+		cout << array[i];
+	cout << "\n";
 	cout << myarray.size();
 	cout << "\n";
 }
-
