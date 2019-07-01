@@ -10,6 +10,7 @@ void testfunc(int &i)
 int main()
 {
 	int x = 10;
+	int & y = x;
 	testfunc(x);
 	cout << x;
 	cout << '\n';
