@@ -17,5 +17,9 @@ int main()
 	cout << y << endl;
 	testfunc(x);
 	cout << x << endl;
+	int * p;
+	int * & r = p;
+	r = &x;
+	cout << *p << endl;
 }
 
