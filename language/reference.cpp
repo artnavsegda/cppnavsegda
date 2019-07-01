@@ -10,9 +10,12 @@ void testfunc(int &i)
 int main()
 {
 	int x = 10;
+	cout << x << endl;
 	int & y = x;
+	y = 14;
+	cout << x << endl;
+	cout << y << endl;
 	testfunc(x);
-	cout << x;
-	cout << '\n';
+	cout << x << endl;
 }
 
