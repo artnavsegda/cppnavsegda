@@ -3,24 +3,19 @@ using namespace std;
 
 struct myclass
 {
-	virtual void printi() = 0;
-};
-
-struct otherclass : myclass
-{
 	int i;
 	void printi();
 };
 
-void otherclass::printi()
+void myclass::printi()
 {
 	cout << i << endl;
 }
 
 int main()
 {
-	otherclass myobj;
-	myobj.i = 11;
+	myclass myobj;
+	myobj.i = 10;
 	myobj.printi();
 }
 
