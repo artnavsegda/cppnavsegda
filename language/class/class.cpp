@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
-struct myclass
+class myclass
 {
-	int i;
-	void printi();
+	public:
+		int i;
+		void printi();
 };
 
 void myclass::printi()
