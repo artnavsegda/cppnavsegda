@@ -37,6 +37,8 @@ myclass::~myclass()
 
 int main()
 {
+	myclass * mylink = new myclass();
+	delete mylink;
 	myclass myobj;
 	myclass myobj2 = myobj;
 	myclass myobj3(20);
