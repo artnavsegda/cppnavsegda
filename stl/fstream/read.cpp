@@ -1,14 +1,19 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	ofstream thefile ("file.txt");
+	string line;
+	ifstream thefile ("file.txt");
 	if (thefile.is_open())
 	{
-		thefile << "Writing text";
+		while (getline(thefile,line))
+		{
+			cout << line << endl;
+		}
 		thefile.close();
 	}
 	return 0;
