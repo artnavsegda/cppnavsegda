@@ -1,17 +1,25 @@
 #include <iostream>
 using namespace std;
 
-class myclass
+struct myclass
 {
-	public:
-		int i;
-		void printi();
-		class 
+	int i;
+	void printi();
+	struct nestclass
+	{
+		int y;
+		void printy();
+	};
 };
 
 void myclass::printi()
 {
 	cout << i << endl;
+}
+
+void myclass::nestclass::printy()
+{
+	cout << y << endl;
 }
 
 int main()
