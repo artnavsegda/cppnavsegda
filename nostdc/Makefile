@@ -1,6 +1,6 @@
 CXXFLAGS = -nodefaultlibs -lc -fno-exceptions
 
-TARGETS = hello auto decltype foreach namespace defaultargs newdelete reference static_cast template lambda
+TARGETS = hello auto decltype foreach namespace defaultargs newdelete reference static_cast template lambda nullptr
 
 all: $(TARGETS)
 
