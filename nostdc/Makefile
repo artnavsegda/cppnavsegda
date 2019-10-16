@@ -1,6 +1,8 @@
 CXXFLAGS = -nodefaultlibs -lc -fno-exceptions
 
-all: hello auto decltype
+TARGETS = hello auto decltype
+
+all: $(TARGETS)
 
 hello: wrapper.o hello.o
 	g++ $(CXXFLAGS) -o hello hello.o wrapper.o
@@ -12,4 +14,4 @@ auto: wrapper.o auto.o
 	g++ $(CXXFLAGS) -o $@ $^
 
 clean:
-	rm hello auto decltype *.o
+	rm $(TARGETS) *.o
