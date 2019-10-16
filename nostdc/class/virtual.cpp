@@ -1,25 +1,35 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-struct myclass
-{
-	virtual void printi() = 0;
-};
-
-struct otherclass : myclass
-{
-	int i;
-	void printi();
-};
-
-void otherclass::printi()
-{
-	printf("%d\n", i);
-}
-
-int main()
-{
-	otherclass myobj;
-	myobj.i = 11;
-	myobj.printi();
-}
+class base 
+{ 
+public: 
+    virtual void print () 
+    { printf("print base class\n"); } 
+  
+    void show () 
+    { printf("show base class\n"); } 
+}; 
+  
+class derived:public base 
+{ 
+public: 
+    void print () 
+    { printf("print derived class\n"); } 
+  
+    void show () 
+    { printf("show derived class\n"); } 
+}; 
+  
+int main() 
+{ 
+    base *bptr; 
+    derived d; 
+    bptr = &d; 
+      
+    //virtual function, binded at runtime 
+    bptr->print();  
+      
+    // Non-virtual function, binded at compile time 
+    bptr->show();  
+} 
 
