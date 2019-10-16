@@ -1,11 +1,14 @@
 CXXFLAGS = -nodefaultlibs -lc -fno-exceptions
 
-TARGETS = hello auto decltype foreach namespace defaultargs
+TARGETS = hello auto decltype foreach namespace defaultargs newdelete
 
 all: $(TARGETS)
 
 hello: wrapper.o hello.o
 	g++ $(CXXFLAGS) -o hello hello.o wrapper.o
+
+newdelete: wrapper.o newdelete.o
+	g++ $(CXXFLAGS) -o newdelete newdelete.o wrapper.o
 
 %: %.o
 	g++ $(CXXFLAGS) -o $@ $^
