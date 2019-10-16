@@ -1,6 +1,6 @@
 CXXFLAGS = -nodefaultlibs -lc -fno-exceptions
 
-TARGETS = hello auto decltype
+TARGETS = hello auto decltype foreach
 
 all: $(TARGETS)
 
