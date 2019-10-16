@@ -1,7 +1,10 @@
-CXXFLAGS = -nodefaultlibs -lc
+CXXFLAGS = -nodefaultlibs -lc -fno-exceptions
 
 hello: wrapper.o hello.o
-	g++ -o hello hello.o wrapper.o
+	g++ $(CXXFLAGS) -o hello hello.o wrapper.o
+
+auto: wrapper.o auto.o
+	g++ $(CXXFLAGS) -o auto auto.o wrapper.o
 
 clean:
-	rm hello
+	rm hello auto *.o
