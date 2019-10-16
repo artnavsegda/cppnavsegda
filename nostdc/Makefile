@@ -1,6 +1,6 @@
 CXXFLAGS = -nodefaultlibs -lc -fno-exceptions
 
-TARGETS = hello auto decltype foreach namespace defaultargs newdelete
+TARGETS = hello auto decltype foreach namespace defaultargs newdelete reference
 
 all: $(TARGETS)
 
