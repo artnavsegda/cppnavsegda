@@ -23,13 +23,17 @@ public:
   
 int main() 
 { 
+    base bobj;
+
+    bobj.print();
+    bobj.show();
+
     base *bptr; 
     derived d; 
     bptr = &d; 
-      
+
     //virtual function, binded at runtime 
     bptr->print();  
-      
     // Non-virtual function, binded at compile time 
     bptr->show();  
 } 
