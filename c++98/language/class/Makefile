@@ -1,0 +1,4 @@
+all: class.exe constructors.exe inheritance.exe nested.exe overload.exe polymorphism.exe private.exe purevirtual.exe staticmethod.exe this.exe virtual.exe
+
+clean:
+	del *.exe *.obj
