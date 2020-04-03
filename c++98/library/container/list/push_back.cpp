@@ -1,13 +1,12 @@
 #include <iostream>
-#include <vector>
+#include <list>
 
 using namespace std;
 
 int main()
 {
-	vector<int> v;
+	list<int> v;
 	v.push_back(44);
-	cout << "Vector v element 0 is " << v[0] << endl;
-	cout << "Vector v size is " << v.size() << endl;
+	cout << "List v size is " << v.size() << endl;
 	return 0;
 }
