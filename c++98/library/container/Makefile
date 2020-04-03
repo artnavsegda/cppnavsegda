@@ -1,4 +1,4 @@
-all: iterator.exe vector.exe vectorexception.exe
+all: iterator.exe
 
 clean:
 	del *.exe *.obj
