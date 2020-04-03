@@ -1,4 +1,4 @@
-all: exception.exe size.exe push_back.exe element.exe max_size.exe
+all: size.exe
 
 clean:
 	del *.exe *.obj
