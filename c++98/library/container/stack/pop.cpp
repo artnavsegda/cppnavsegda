@@ -1,12 +1,12 @@
 #include <iostream>
-#include <vector>
+#include <stack>
 
 using namespace std;
 
 int main()
 {
-	vector<int> v(6,42);
-	v.pop_back();
-	cout << "Vector v size is " << v.size() << endl;
+	stack<int> v;
+	v.pop();
+	cout << "Stack v size is " << v.size() << endl;
 	return 0;
 }
