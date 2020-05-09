@@ -1,11 +1,11 @@
 #include <iostream>
-#include <stack>
+#include <queue>
 
 using namespace std;
 
 int main()
 {
-	stack<int> v;
-	cout << "Stack v size is " << v.size() << endl;
+	queue<int> v;
+	cout << "Queue v size is " << v.size() << endl;
 	return 0;
 }

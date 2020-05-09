@@ -1,14 +1,14 @@
 #include <iostream>
-#include <stack>
+#include <queue>
 
 using namespace std;
 
 int main()
 {
-	stack<int> v;
+	queue<int> v;
 	if (v.empty())
-		cout << "Stack v is empty\n";
+		cout << "Queue v is empty\n";
 	else
-		cout << "Stack v is not empty\n";
+		cout << "Queue v is not empty\n";
 	return 0;
 }
