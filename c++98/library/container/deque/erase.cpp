@@ -1,12 +1,12 @@
 #include <iostream>
-#include <vector>
+#include <deque>
 
 using namespace std;
 
 int main()
 {
-	vector<int> v(6,42);
+	deque<int> v(6,42);
 	v.erase(v.begin());
-	cout << "Vector v size is " << v.size() << endl;
+	cout << "Deque v size is " << v.size() << endl;
 	return 0;
 }

@@ -1,12 +1,12 @@
 #include <iostream>
-#include <vector>
+#include <deque>
 
 using namespace std;
 
 int main()
 {
-	vector<int> v;
+	deque<int> v;
 	v.assign(5, 10);
-	cout << "Vector v size is " << v.size() << endl;
+	cout << "Deque v size is " << v.size() << endl;
 	return 0;
 }

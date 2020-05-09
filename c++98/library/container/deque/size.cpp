@@ -1,11 +1,11 @@
 #include <iostream>
-#include <vector>
+#include <deque>
 
 using namespace std;
 
 int main()
 {
-	vector<int> v(6,42);
-	cout << "Vector v size is " << v.size() << endl;
+	deque<int> v(6,42);
+	cout << "Deque v size is " << v.size() << endl;
 	return 0;
 }
