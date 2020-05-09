@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
 	stack<int> v;
-	cout << "Stack v size is " << v.size() << endl;
+	v.push(44);
+	cout << "Stack top element is " << v.top() << endl;
 	return 0;
 }

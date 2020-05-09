@@ -6,6 +6,9 @@ using namespace std;
 int main()
 {
 	stack<int> v;
-	cout << "Stack v size is " << v.size() << endl;
+	if (v.empty())
+		cout << "Stack v is empty\n";
+	else
+		cout << "Stack v is not empty\n";
 	return 0;
 }
